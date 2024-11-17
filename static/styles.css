@@ -1,0 +1,125 @@
+/* Base Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 5% 5%;
+  background: linear-gradient(to bottom, #000000 0%, #2b2b2b 100%); /* Smooth vertical fading black background */
+  color: #FFD700; /* Gold text color */
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  background-color: #000000; /* Pure black for container */
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.7); /* Gold lighting effect around the box */
+}
+
+/* Title Styling */
+h2 {
+  text-align: center;
+  font-size: 4rem; /* Larger title font size */
+  color: #FFD700; /* Gold color for title */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Label Styling */
+.form__label {
+  font-size: 1.8rem; /* Larger font size */
+  margin-left: 2rem;
+  color: #FFD700; /* Gold color for labels */
+}
+
+/* Input Field Styling */
+.form__input {
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  margin: 20px 0; /* Space around input field */
+  border-radius: 1rem;
+  background-color: #333333; /* Dark grey for input field */
+  border: none;
+  width: 100%;
+  color: #FFD700; /* Gold text color */
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 0.4rem solid #FFD700; /* Gold border on focus */
+}
+
+/* Button Styling */
+.button,
+.button1,
+.button2 {
+  font-size: 1.8rem; /* Larger font size for buttons */
+  padding: 1.5rem 1.8rem; /* Increased button padding */
+  width: 100%; /* Full-width button */
+  margin: 20px 0; /* Space around buttons */
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 1rem;
+  color: #000000; /* Black text color */
+  font-weight: bold;
+}
+
+/* Button Hover Effects */
+.button {
+  background-color: #FFD700; /* Gold color */
+}
+.button:hover {
+  background-color: #FFC107; /* Lighter gold on hover */
+  transform: scale(1.08); /* Slight scale on hover */
+}
+
+.button1 {
+  background-color: #FFD700; /* Gold color */
+}
+
+.button1:hover {
+  background-color: #FFC107; /* Lighter gold on hover */
+  transform: scale(1.08);
+}
+
+.button2 {
+  background-color: #FFD700; /* Gold color */
+}
+
+.button2:hover {
+  background-color: #FFC107; /* Lighter gold on hover */
+  transform: scale(1.08);
+}
+
+/* Result Link Styling */
+.right {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.8rem; /* Increased font size for h6 */
+  color: #f0e68c; /* Light khaki */
+}
+
+h6 a {
+  color: #FFD700; /* Gold link color */
+  text-decoration: none;
+}
+
+h6 a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .form {
+    width: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
