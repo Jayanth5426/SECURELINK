@@ -6,6 +6,7 @@ import pandas as pd
 from sklearn import metrics 
 import warnings
 import pickle
+import os
 warnings.filterwarnings('ignore')
 from feature import FeatureExtraction  # Ensure this file exists and is correct
 
@@ -36,4 +37,4 @@ def index():
     return render_template("index.html", xx=-1)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=os.getenv('PORT', 5000))
